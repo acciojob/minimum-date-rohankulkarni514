@@ -3,7 +3,7 @@ function minDate(dates) {
   
   return dates.reduce((earliest, current) => {
     return current <earliest ? current : earliest;
-  });
+  },dates[0]);
 }
 
 // Do not change the code
