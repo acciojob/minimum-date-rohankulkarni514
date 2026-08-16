@@ -2,7 +2,7 @@ function minDate(dates) {
   if (!dates || dates.length === 0) return null;
   
   return dates.reduce((earliest, current) => {
-    return new Date(current) < new Date(earliest) ? current : earliest;
+    return current <earliest ? current : earliest;
   });
 }
 
